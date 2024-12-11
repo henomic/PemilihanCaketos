@@ -61,7 +61,8 @@
                                                 class="bg-blue-200 text-blue-800 font-semibold py-2 px-4 rounded-full text-sm">
                                                 Edit
                                             </button>
-                                            <button
+                                            <button data-modal-target="delete{{ $item->id }}"
+                                                data-modal-toggle="delete{{ $item->id }}"
                                                 class="bg-red-200 text-red-800 font-semibold py-2 px-4 rounded-full text-sm ml-2">
                                                 Hapus
                                             </button>
@@ -70,6 +71,7 @@
                                 </div>
                             </li>
                             @include('admin.paslon.modal.edit')
+                            @include('admin.paslon.modal.delete')
                         @endforeach
                         <div class="flex justify-between">
                             <div
@@ -85,6 +87,7 @@
                                     <button data-modal-toggle="konfirmasi{{ $data->id }}"
                                         data-modal-target="konfirmasi{{ $data->id }}"
                                         class="text-white rounded-lg bg-blue-400 py-1 px-2">{{ $data->status == 'buat' ? 'Konfirmasi' : 'Selesai' }}</button>
+
                                     <button data-modal-target="tolak{{ $data->id }}"
                                         data-modal-toggle="tolak{{ $data->id }}"
                                         class="text-white rounded-lg bg-red-400 py-1 px-2">{{ $data->status == 'buat' ? 'Hapus' : 'Anulir' }}</button>

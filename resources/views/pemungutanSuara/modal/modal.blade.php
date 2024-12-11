@@ -52,10 +52,7 @@
              </div>
          </div>
          <div class="mt-6 px-6 flex justify-between items-center">
-             <button id="pilihPaslon"
-                 class="px-6 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-300 ease-in-out transform hover:scale-105">
-                 Pilih Paslon Ini
-             </button>
+
              <button type="button" data-id="modal{{ $item->id }}"
                  class="px-6 py-3 but bg-gray-300 text-gray-700 text-lg font-semibold rounded-lg shadow-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 transition duration-300 ease-in-out">
                  Tutup

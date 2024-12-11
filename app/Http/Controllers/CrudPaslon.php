@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\paslon;
 use App\Models\periode;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Container\Attributes\Storage as AttributesStorage;
 use Illuminate\Http\Request;
@@ -151,6 +152,10 @@ class CrudPaslon extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $user = paslon::find($id);
+        $user->delete();
+
+        toast('paslon berhasil di delete', 'success');
+        return redirect()->back();
     }
 }

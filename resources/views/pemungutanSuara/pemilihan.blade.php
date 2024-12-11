@@ -32,7 +32,7 @@
                                 name="paslon"
                                 class="form-radio absolute sr-only  peer  h-5 w-5 text-red-600 focus:ring-red-500">
                             <div
-                                class="bg-transparent  h-full min-w-[30rem] p-5  max-w-[30rem]    relative  peer-checked:bg-red-200 peer-checked:scale-95  peer-checked:border-2 peer-checked:-translate-y-4 peer-checked:border-none  rounded-xl   overflow-hidden shadow-lg border-2 border-red-200 hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                class="bg-transparent  h-full min-w-[30rem] p-5  max-w-[30rem]    relative  peer-checked:bg-red-500 peer-checked:scale-95  peer-checked:border-2 peer-checked:-translate-y-4 peer-checked:border-none  rounded-xl   overflow-hidden shadow-lg border-2 border-red-200 hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
                                 <label class=" absolute cursor-pointer inset-1 peer w-full" for="paslon{{ $item->id }}">
                                 </label>
 
