@@ -36,6 +36,8 @@ class CrudPaslon extends Controller
             $data['no'] += $number[1];
         }
 
+        $data['id_periode'] = $periode->no_paslon;
+        // dd();
         // dd($periode->no_paslon);
 
         return view('admin.paslon.indexPaslon', $data);

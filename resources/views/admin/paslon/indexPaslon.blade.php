@@ -61,11 +61,13 @@
                                                 class="bg-blue-200 text-blue-800 font-semibold py-2 px-4 rounded-full text-sm">
                                                 Edit
                                             </button>
-                                            <button data-modal-target="delete{{ $item->id }}"
-                                                data-modal-toggle="delete{{ $item->id }}"
-                                                class="bg-red-200 text-red-800 font-semibold py-2 px-4 rounded-full text-sm ml-2">
-                                                Hapus
-                                            </button>
+                                            @if ($item->no_paslon === $id_periode)
+                                                <button data-modal-target="delete{{ $item->id }}"
+                                                    data-modal-toggle="delete{{ $item->id }}"
+                                                    class="bg-red-200 text-red-800 font-semibold py-2 px-4 rounded-full text-sm ml-2">
+                                                    Hapus
+                                                </button>
+                                            @endif
                                         @endif
                                     </div>
                                 </div>
